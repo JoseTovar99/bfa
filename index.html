@@ -14,8 +14,22 @@
         </div>
         
         <div class="game-layout">
-            <iframe src="https://i.simmer.io/@Jose510/secondexport" style="width:1060px;height:700px;border:0"></iframe>
+            <iframe id="embededgame" src="https://i.simmer.io/@Jose510/finalexportbfa" style="width:1100px;height:700px;border:0"></iframe>
         </div>
     </div>
+
+    <button onclick="goFullscreen('embededGame'); return false">Fullscreen</button>
+
+
+    <script>
+        function goFullscreen(id) {
+            var element = document.getElementById(id);
+            if (element.mozRequestFullScreen) {
+              element.mozRequestFullScreen();
+            } else if (element.webkitRequestFullScreen) {
+              element.webkitRequestFullScreen();
+            }
+        }
+        </script>
 </body>
 </html>
